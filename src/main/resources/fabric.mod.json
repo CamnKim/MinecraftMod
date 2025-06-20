@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shitmod",
+	"version": "${version}",
+	"name": "cam-mod",
+	"description": "Just a shitpost to mess around with",
+	"authors": [
+		"Cameron Kim"
+	],
+	"contact": {
+		"homepage": "https://camnkim.com",
+		"sources": "https://github.com/CamnKim/MinecraftMod"
+	},
+	"license": "MIT",
+	"icon": "assets/shitmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.camnkim.shitmod.Cammod"
+		],
+		"fabric-datagen": [
+			"com.camnkim.shitmod.CammodDataGenerator"
+		],
+		"client": [
+			"com.camnkim.shitmod.CammodClient"
+		]
+	},
+	"mixins": [
+		"shitmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
